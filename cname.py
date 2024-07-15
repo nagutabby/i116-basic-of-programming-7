@@ -4,7 +4,7 @@ class CName(Enum):
     PUSH = auto()
     MONE = auto()
     MUL = auto()
-    QUO = auto()
+    DIV = auto()
     REM = auto()
     ADD = auto()
     SUB = auto()
@@ -23,8 +23,8 @@ class CName(Enum):
             return 'mone'
         elif self == CName.MUL:
             return 'mul'
-        elif self == CName.QUO:
-            return 'quo'
+        elif self == CName.DIV:
+            return 'div'
         elif self == CName.REM:
             return 'rem'
         elif self == CName.ADD:

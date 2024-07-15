@@ -25,14 +25,14 @@ class VM():
                 y = self.stk.top()
                 x = self.stk.pop().top()
                 self.stk = self.stk.pop().pop().push(x * y)
-            elif com.cname == CName.QUO:
+            elif com.cname == CName.DIV:
                 if self.stk.is_empty_or_one():
-                    raise VMError('stk consists of 1 or 0 element for quo')
+                    raise VMError('stk consists of 1 or 0 element for div')
                 y = self.stk.top()
                 x = self.stk.pop().top()
                 if y == 0:
                     raise DivisionByZeroException('division by zero in VM')
-                self.stk = self.stk.pop().pop().push(x // y)
+                self.stk = self.stk.pop().pop().push(x / y)
             elif com.cname == CName.REM:
                 if self.stk.is_empty_or_one():
                     raise VMError('stk consists of 1 or 0 element for rem')

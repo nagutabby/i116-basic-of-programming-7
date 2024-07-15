@@ -1,6 +1,6 @@
 from cname import CName
 
-class Command(object):
+class Command():
     def __init__(self, cname, x) -> None:
         self.cname = cname
         if cname == CName.PUSH:

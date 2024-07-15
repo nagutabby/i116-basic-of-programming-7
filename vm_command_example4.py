@@ -8,7 +8,7 @@ push3 = Command(CName.PUSH, 3)
 push4 = Command(CName.PUSH, 4)
 add = Command(CName.ADD, None)
 push0 = Command(CName.PUSH, 0)
-rem = Command(CName.QUO, None)
+rem = Command(CName.DIV, None)
 
 cl = [push3, push4, add, push0, rem]
 print(l2s(cl))

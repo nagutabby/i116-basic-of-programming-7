@@ -85,7 +85,7 @@ class DivisionParseTree(ExpressionParseTree):
     def compile(self):
         cl1 = self.expression1.compile()
         cl2 = cl1 + self.expression2.compile()
-        return cl2 + [Command(CName.QUO, None)]
+        return cl2 + [Command(CName.DIV, None)]
 
 class RemainderParseTree(ExpressionParseTree):
     def __init__(self, expression1: ExpressionParseTree, expression2: ExpressionParseTree) -> None:

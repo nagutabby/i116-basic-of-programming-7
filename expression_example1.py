@@ -1,8 +1,8 @@
 from parse_tree import ExpressionParseTree, NumberParseTree, MultiplicationParseTree, AdditionParseTree
 from list_to_string import l2s
 from vm import VM
-# 3 + 4 * 5を計算する
 
+# 3 + 4 * 5を計算する
 three: NumberParseTree = NumberParseTree(3)
 four: NumberParseTree = NumberParseTree(4)
 five: NumberParseTree = NumberParseTree(5)
